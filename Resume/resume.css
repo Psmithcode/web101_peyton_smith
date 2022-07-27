@@ -1,0 +1,271 @@
+  :root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --grey: #6b7280;
+    --light : #EEE ;
+    --pink: #ec4899;
+}
+
+*{
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+  
+}
+
+body{
+  width: 21cm;
+  height: 29.7cm;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  background-color: var(--grey);
+  width: 21cm;
+  height: 29.7cm;
+  border: 1px black solid;
+  grid-template-areas: "roganPic title title"
+                       "roganPic title title"
+                       "roganPic title title"
+                       "roganPic personal personal"
+                       "roganPic personal personal"
+                       "roganPic personal personal"
+                       "contactDetails workHistory workHistory"
+                       "contactDetails workHistory workHistory"
+                       "contactDetails workHistory workHistory"
+                       "workRefs academicHistory academicHistory"
+                       "workRefs academicHistory academicHistory"
+                       "workRefs academicHistory academicHistory";
+}
+
+.roganPic{
+  grid-area: roganPic;
+  width: 7cm;
+  height: 14.85cm;
+
+}
+
+#roganPic{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.contactDetails{
+  grid-area: contactDetails;
+  width: 7cm;
+  height: 7.425cm;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: blue;
+}
+
+#contacth2{
+  width: 100%;
+  height: 15%;
+  border: 1px solid black;
+  font-size: x-large;
+  justify-content: center;
+  text-align: center;
+}
+
+.contactDetails > p{
+  color: black;
+  width: 20px;
+  height: 20px;
+}
+
+.workRefs {
+  grid-area: workRefs;
+  width: 7cm;
+  height: 7.425cm;
+  background-color: red;
+}
+
+.title {
+  grid-area: title;
+  width: 14cm;
+  height: 7.425cm;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 0;
+  color: #4287f5;
+}
+
+.title > h1 {
+  font-size: 48pt;
+  font-weight: 900;
+  width: 400px;
+  margin-bottom: 0px;
+}
+
+.title > h3{
+  font-size: 24pt;
+  font-weight: 900;
+  width: 95%;
+  padding-bottom: 20px;
+  padding-top: 2px;
+  margin: 20px 20px 20px 0;
+  border-bottom: 5px solid #4287f5;
+  justify-content: flex-start;
+}
+
+.personalSkillsContainer{
+  grid-area: personal;
+  width: 14cm;
+  height: 7.425cm;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 10px;
+}
+
+.personalSummary{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  color: #4287f5;
+}
+
+.personalSummary > h2 {
+  font-size: 47px;
+  margin: 0;
+  line-height: 45px;
+  padding: 10px;
+}
+
+.personalSummary > p {
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.coreSkills{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:first baseline;
+  align-items: flex-start;
+  background-color: white;
+  color: #4287f5;
+}
+
+.coreSkills > h2{
+  padding-left: 30px;
+  font-size: 47px;
+  margin: 0;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+#skillsList{
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  margin-left: 15px;
+  list-style: circle;
+  
+}
+
+.workHistory{
+  grid-area: workHistory;
+  width: 14cm;
+  height: 7.425cm;
+  background-color: pink;
+}
+
+.workHistoryGrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 40%);
+  grid-template-areas: "whbox1 wbox3 whbox3"
+                       "whbox2 whbox4 whbox4";
+}
+
+#whbox1{
+  grid-area: whbox1;
+  color: #4287f5;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  justify-content: first baseline;
+  align-items: flex-start;
+}
+
+#whbox1 > h3{
+  font-size: 24px;
+  margin: 0;
+  padding-left: 5px;
+}
+
+
+#whbox1 > p{
+  font-size: 20px;
+  margin: 0;
+  padding: 0 10px 10px 10px;
+}
+
+
+
+
+#whbox2{
+  color: #4287f5;
+  grid-area: whbox2;
+}
+
+
+#whbox3{
+  color: #4287f5;
+  grid-area: whbox3;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 10px;
+}
+
+#whbox3 > ul{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+
+#whbox4{
+  color: #4287f5;
+  grid-area: whbox4;
+}
+
+.workHistory > h2 {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 47px;
+  padding: 10px;
+}
+
+.academickHistory{
+  grid-area: academicHistory;
+  width: 14cm;
+  height: 7.425cm;
+  background-color: brown;
+}
+
+
+
