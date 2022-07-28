@@ -14,9 +14,12 @@
 }
 
 body{
-  width: 21cm;
-  height: 29.7cm;
+  background-color: var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .gridContainer {
   display: grid;
@@ -38,6 +41,7 @@ body{
                        "workRefs academicHistory academicHistory"
                        "workRefs academicHistory academicHistory"
                        "workRefs academicHistory academicHistory";
+
 }
 
 .roganPic{
@@ -53,36 +57,69 @@ body{
   width: 100%;
 }
 
-.contactDetails{
+.contactDetails, .workRefs{
   grid-area: contactDetails;
+
   width: 7cm;
   height: 7.425cm;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: blue;
+  background-color: #4287f5;
 }
 
-#contacth2{
+.contactDetails > ul,
+.workRefs > div       {
+  color: white;
+  list-style: none;
+}
+
+
+
+#contactList > li{
+  margin-bottom: 7px;
+}
+
+#contacth2, #workRefh2{
   width: 100%;
   height: 15%;
-  border: 1px solid black;
-  font-size: x-large;
+  /* border: 1px solid black; */
+  font-size: 36px;
   justify-content: center;
   text-align: center;
-}
-
-.contactDetails > p{
-  color: black;
-  width: 20px;
-  height: 20px;
+  color: white;
+  margin: 20px 0 0 0;
 }
 
 .workRefs {
   grid-area: workRefs;
   width: 7cm;
   height: 7.425cm;
-  background-color: red;
+  background-color: #4287f5;
+}
+
+#workref1 {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: 100%;
+  flex-direction: column;
+  width: 100%; */
+  
+  padding: 20px;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#workref1 > p{
+
+  margin: 0;
+  font-size: 13px;
+  
+  
 }
 
 .title {
@@ -146,7 +183,7 @@ body{
 }
 
 .personalSummary > p {
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 10px;
 }
 
@@ -182,14 +219,15 @@ body{
   grid-area: workHistory;
   width: 14cm;
   height: 7.425cm;
-  background-color: pink;
+  background-color: white;
+  padding: 10px;
 }
 
 .workHistoryGrid{
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(2, 40%);
-  grid-template-areas: "whbox1 wbox3 whbox3"
+  grid-template-areas: "whbox1 whbox3 whbox3"
                        "whbox2 whbox4 whbox4";
 }
 
@@ -208,7 +246,6 @@ body{
 #whbox1 > h3{
   font-size: 24px;
   margin: 0;
-  padding-left: 5px;
 }
 
 
@@ -224,6 +261,19 @@ body{
 #whbox2{
   color: #4287f5;
   grid-area: whbox2;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  justify-content: first baseline;
+  align-items: flex-start;
+}
+
+#whbox2 > h3{
+  margin: 0;
+  font-size: 24px;
+  padding-top: 10px;
 }
 
 
@@ -235,18 +285,32 @@ body{
   flex-wrap: wrap;
   align-items: center;
   padding-right: 10px;
-}
+  font-size: 15px;
+  
+} 
+
+/* #whbox3List > li::marker{
+  font-size: 10px;
+} */
 
 #whbox3 > ul{
   height: 100%;
   width: 100%;
-  padding: 0;
+  padding: 0 0 0 60px;
 }
 
 
 #whbox4{
   color: #4287f5;
   grid-area: whbox4;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+  justify-content: first baseline;
+  align-items: flex-start;
+  font-size: 15px;
 }
 
 .workHistory > h2 {
@@ -257,15 +321,136 @@ body{
   justify-content: flex-start;
   align-items: center;
   font-size: 47px;
-  padding: 10px;
+  padding: 0 0 0 10px;
+  color: #4287f5;
 }
 
-.academickHistory{
+.academicHistory{
   grid-area: academicHistory;
   width: 14cm;
   height: 7.425cm;
-  background-color: brown;
+  background-color: white;
 }
 
+.academicHistory > h2 {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 47px;
+  padding: 0 0 0 10px;
+  color: #4287f5;
+}
+
+
+.academicHistoryGrid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 40%);
+  grid-template-areas: "ahbox1 ahbox3 ahbox3"
+                       "ahbox2 ahbox4 ahbox4";
+}
+
+#ahbox1{
+  grid-area: ahbox1;
+  color: #4287f5;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  justify-content: first baseline;
+  align-items: flex-start;
+}
+
+#ahbox1 > h3{
+  font-size: 24px;
+  margin: 0;
+}
+
+
+#ahbox1 > p{
+  font-size: 20px;
+  margin: 0;
+  padding: 0 10px 10px 10px;
+}
+
+
+
+
+#ahbox2{
+  color: #4287f5;
+  grid-area: ahbox2;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  justify-content: first baseline;
+  align-items: flex-start;
+}
+
+#ahbox2 > h3{
+  margin: 0;
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+
+#ahbox3{
+  color: #4287f5;
+  grid-area: ahbox3;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 10px;
+} 
+
+#ahbox3List > li::marker{
+  font-size: 10px;
+}
+
+#ahbox3 > ul{
+  height: 100%;
+  width: 100%;
+  padding: 0 0 0 60px;
+  font-size: 18px;
+}
+
+
+#ahbox4 > ul{
+  height: 100%;
+  width: 100%;
+  /* padding: 0 0 0 60px; */
+  font-size: 18px;
+}
+
+
+#ahbox4{
+  color: #4287f5;
+  grid-area: ahbox4;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: 20px;
+  padding-top: 0px;
+  justify-content: first baseline;
+  align-items: flex-start;
+}
+
+.academickHistory > h2 {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 47px;
+  padding: 0 0 0 10px;
+  color: #4287f5;
+}
 
 
