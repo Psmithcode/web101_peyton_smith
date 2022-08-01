@@ -2,9 +2,11 @@
     --dark: #374151;
     --darker: #1f2937;
     --darkest: #111827;
-    --grey: #6b7280;
+    --grey: #A2B5BB;
     --light : #EEE ;
     --pink: #ec4899;
+    --red: #EB1D36;
+
 }
 
 *{
@@ -65,12 +67,12 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #4287f5;
+  background-color: var(--red);
 }
 
 .contactDetails > ul,
 .workRefs > div       {
-  color: white;
+  color: var(--grey);
   list-style: none;
 }
 
@@ -87,7 +89,7 @@ body{
   font-size: 36px;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: var(--grey);
   margin: 20px 0 0 0;
 }
 
@@ -95,7 +97,7 @@ body{
   grid-area: workRefs;
   width: 7cm;
   height: 7.425cm;
-  background-color: #4287f5;
+  background-color: var(--red);
 }
 
 #workref1 {
@@ -126,14 +128,14 @@ body{
   grid-area: title;
   width: 14cm;
   height: 7.425cm;
-  background-color: white;
+  background-color: var(--grey);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
   margin: 0;
-  color: #4287f5;
+  color: var(--red);
 }
 
 .title > h1 {
@@ -150,7 +152,7 @@ body{
   padding-bottom: 20px;
   padding-top: 2px;
   margin: 20px 20px 20px 0;
-  border-bottom: 5px solid #4287f5;
+  border-bottom: 5px solid var(--red);
   justify-content: flex-start;
 }
 
@@ -158,7 +160,7 @@ body{
   grid-area: personal;
   width: 14cm;
   height: 7.425cm;
-  background-color: white;
+  background-color: var(--grey);
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -171,8 +173,8 @@ body{
   height: 100%;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: white;
-  color: #4287f5;
+  background-color: var(--grey);
+  color: var(--red);
 }
 
 .personalSummary > h2 {
@@ -194,8 +196,8 @@ body{
   flex-direction: column;
   justify-content:first baseline;
   align-items: flex-start;
-  background-color: white;
-  color: #4287f5;
+  background-color: var(--grey);
+  color: var(--red);
 }
 
 .coreSkills > h2{
@@ -219,7 +221,7 @@ body{
   grid-area: workHistory;
   width: 14cm;
   height: 7.425cm;
-  background-color: white;
+  background-color: var(--grey);
   padding: 10px;
 }
 
@@ -233,7 +235,7 @@ body{
 
 #whbox1{
   grid-area: whbox1;
-  color: #4287f5;
+  color: var(--red);
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -259,7 +261,7 @@ body{
 
 
 #whbox2{
-  color: #4287f5;
+  color: var(--red);
   grid-area: whbox2;
   display: flex;
   flex-direction: column;
@@ -278,7 +280,7 @@ body{
 
 
 #whbox3{
-  color: #4287f5;
+  color: var(--red);
   grid-area: whbox3;
   margin: 0;
   display: flex;
@@ -301,7 +303,7 @@ body{
 
 
 #whbox4{
-  color: #4287f5;
+  color: var(--red);
   grid-area: whbox4;
   display: flex;
   flex-direction: column;
@@ -322,14 +324,14 @@ body{
   align-items: center;
   font-size: 47px;
   padding: 0 0 0 10px;
-  color: #4287f5;
+  color: var(--red);
 }
 
 .academicHistory{
   grid-area: academicHistory;
   width: 14cm;
   height: 7.425cm;
-  background-color: white;
+  background-color: var(--grey);
 }
 
 .academicHistory > h2 {
@@ -341,7 +343,7 @@ body{
   align-items: center;
   font-size: 47px;
   padding: 0 0 0 10px;
-  color: #4287f5;
+  color: var(--red);
 }
 
 
@@ -355,7 +357,7 @@ body{
 
 #ahbox1{
   grid-area: ahbox1;
-  color: #4287f5;
+  color: var(--red);
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -381,7 +383,7 @@ body{
 
 
 #ahbox2{
-  color: #4287f5;
+  color: var(--red);
   grid-area: ahbox2;
   display: flex;
   flex-direction: column;
@@ -400,7 +402,7 @@ body{
 
 
 #ahbox3{
-  color: #4287f5;
+  color: var(--red);
   grid-area: ahbox3;
   margin: 0;
   display: flex;
@@ -430,7 +432,7 @@ body{
 
 
 #ahbox4{
-  color: #4287f5;
+  color: var(--red);
   grid-area: ahbox4;
   display: flex;
   flex-direction: column;
@@ -450,7 +452,7 @@ body{
   align-items: center;
   font-size: 47px;
   padding: 0 0 0 10px;
-  color: #4287f5;
+  color: var(--red);
 }
 
 
