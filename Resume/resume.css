@@ -3,9 +3,10 @@
     --darker: #1f2937;
     --darkest: #111827;
     --grey: #A2B5BB;
-    --light : #EEE ;
+    --light : white;
     --pink: #ec4899;
     --red: #EB1D36;
+    --purple: #76549A;
 
 }
 
@@ -27,7 +28,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  background-color: var(--grey);
+  background-color: var(--light);
   width: 21cm;
   height: 29.7cm;
   border: 1px black solid;
@@ -67,12 +68,12 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: var(--red);
+  background-color: var(--purple);
 }
 
 .contactDetails > ul,
 .workRefs > div       {
-  color: var(--grey);
+  color: var(--light);
   list-style: none;
 }
 
@@ -89,7 +90,7 @@ body{
   font-size: 36px;
   justify-content: center;
   text-align: center;
-  color: var(--grey);
+  color: var(--light);
   margin: 20px 0 0 0;
 }
 
@@ -97,7 +98,7 @@ body{
   grid-area: workRefs;
   width: 7cm;
   height: 7.425cm;
-  background-color: var(--red);
+  background-color: var(--purple);
 }
 
 #workref1 {
@@ -128,14 +129,14 @@ body{
   grid-area: title;
   width: 14cm;
   height: 7.425cm;
-  background-color: var(--grey);
+  background-color: var(--light);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
   margin: 0;
-  color: var(--red);
+  color: var(--purple);
 }
 
 .title > h1 {
@@ -152,7 +153,7 @@ body{
   padding-bottom: 20px;
   padding-top: 2px;
   margin: 20px 20px 20px 0;
-  border-bottom: 5px solid var(--red);
+  border-bottom: 5px solid var(--purple);
   justify-content: flex-start;
 }
 
@@ -160,7 +161,7 @@ body{
   grid-area: personal;
   width: 14cm;
   height: 7.425cm;
-  background-color: var(--grey);
+  background-color: var(--light);
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -173,8 +174,8 @@ body{
   height: 100%;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: var(--grey);
-  color: var(--red);
+  background-color: var(--light);
+  color: var(--purple);
 }
 
 .personalSummary > h2 {
@@ -196,8 +197,8 @@ body{
   flex-direction: column;
   justify-content:first baseline;
   align-items: flex-start;
-  background-color: var(--grey);
-  color: var(--red);
+  background-color: var(--light);
+  color: var(--purple);
 }
 
 .coreSkills > h2{
@@ -221,7 +222,7 @@ body{
   grid-area: workHistory;
   width: 14cm;
   height: 7.425cm;
-  background-color: var(--grey);
+  background-color: var(--light);
   padding: 10px;
 }
 
@@ -235,7 +236,7 @@ body{
 
 #whbox1{
   grid-area: whbox1;
-  color: var(--red);
+  color: var(--purple);
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -261,7 +262,7 @@ body{
 
 
 #whbox2{
-  color: var(--red);
+  color: var(--purple);
   grid-area: whbox2;
   display: flex;
   flex-direction: column;
@@ -280,7 +281,7 @@ body{
 
 
 #whbox3{
-  color: var(--red);
+  color: var(--purple);
   grid-area: whbox3;
   margin: 0;
   display: flex;
@@ -303,7 +304,7 @@ body{
 
 
 #whbox4{
-  color: var(--red);
+  color: var(--purple);
   grid-area: whbox4;
   display: flex;
   flex-direction: column;
@@ -324,14 +325,14 @@ body{
   align-items: center;
   font-size: 47px;
   padding: 0 0 0 10px;
-  color: var(--red);
+  color: var(--purple);
 }
 
 .academicHistory{
   grid-area: academicHistory;
   width: 14cm;
   height: 7.425cm;
-  background-color: var(--grey);
+  background-color: var(--light);
 }
 
 .academicHistory > h2 {
@@ -343,7 +344,7 @@ body{
   align-items: center;
   font-size: 47px;
   padding: 0 0 0 10px;
-  color: var(--red);
+  color: var(--purple);
 }
 
 
@@ -357,7 +358,7 @@ body{
 
 #ahbox1{
   grid-area: ahbox1;
-  color: var(--red);
+  color: var(--purple);
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -383,7 +384,7 @@ body{
 
 
 #ahbox2{
-  color: var(--red);
+  color: var(--purple);
   grid-area: ahbox2;
   display: flex;
   flex-direction: column;
@@ -402,7 +403,7 @@ body{
 
 
 #ahbox3{
-  color: var(--red);
+  color: var(--purple);
   grid-area: ahbox3;
   margin: 0;
   display: flex;
@@ -432,7 +433,7 @@ body{
 
 
 #ahbox4{
-  color: var(--red);
+  color: var(--purple);
   grid-area: ahbox4;
   display: flex;
   flex-direction: column;
@@ -452,7 +453,7 @@ body{
   align-items: center;
   font-size: 47px;
   padding: 0 0 0 10px;
-  color: var(--red);
+  color: var(--purple);
 }
 
 
