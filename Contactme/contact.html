@@ -11,35 +11,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="contactPageContainer">
+    <form class="contactPageContainer">
         
         <div class="title">
             <h1>Contact me</h1>
         </div>
         
-        <div class="yesNoContainer">
+        <form id="yesNoContainer">
             <p>Would you like to be contacted?</p>
-            <input type="radio" name="yesno" value="Yes">
+            <input type="radio" name="yesno" id="yesButton" value="Yes">
                 <label for="Yes">Yes</label>
-            <input type="radio" name="yesno" value="No">
+            <input type="radio" name="yesno" id="noButton" value="No">
                 <label for="No">No</label>
-        </div>
+        </form>
 
         <div class="emailContainer">
             <p>Email:</p>
-            <input type="email" id="emailInput" required placeholder="Enter E-mail here">
+            <input type="email" id="emailInput" placeholder="Enter E-mail here">
         </div>
 
         <div class="refContainer">
             <p>How did you hear about me?</p>
             <div class="refButtonContainer">
-                <input type="radio" name="ref" value="classmate">
+                <input type="radio" id="classmateButton" name="ref" value="classmate">
                     <label for="classmate">Classmate</label>
-                <input type="radio" name="ref" value="resume">
+                <input type="radio" id="resButton" name="ref" value="resume">
                     <label for="resume">Resume Submission</label>
-                <input type="radio" name="ref" value="linked">
+                <input type="radio" id="linkButton" name="ref" value="linked">
                     <label for="linked">LinkedIn</label>
-                <input type="radio" name="ref" value="codeacademy">
+                <input type="radio" id="academyButton" name="ref" value="codeacademy">
                     <label for="codeacademy">Code Academy Rec</label> 
             </div>
 
@@ -47,17 +47,19 @@
 
         <div class="birthdayContainer">
             <p>Birthday? (optional)</p>
-            <input type="date" name="date">
+            <input type="date" id="date" name="date">
         </div>
 
         <div class="commentContainer">
             <p>Additional Comments:</p>
-            <textarea name="comments" minlength="20" maxlength="500" cols="30" rows="10" placeholder="Comments here"></textarea>
+            <textarea name="comments" id="comment" minlength="20" maxlength="500" cols="30" rows="10" placeholder="Comments here"></textarea>
         </div>
         <div class="submitContainer">
             <input type="submit" value="Submit" class="submitButton">
         </div>
         
-    </div>
+    </form>
+
+    <script src="contact.js"></script>
 </body>
 </html>

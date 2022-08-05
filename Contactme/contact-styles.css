@@ -51,7 +51,7 @@ body{
     margin: 0;
 }
 
-.yesNoContainer{
+#yesNoContainer{
     width: 100%;
     height: auto;
     display: flex;
@@ -61,7 +61,7 @@ body{
     flex-wrap: wrap;
 }
 
-.yesNoContainer > p{
+#yesNoContainer > p{
     width: 100%;
     text-align: center;
     font-size: 30px;
