@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contactPageContainer">
+        
+        <div class="title">
+            <h1>Contact me</h1>
+        </div>
+        
+        <div class="yesNoContainer">
+            <p>Would you like to be contacted?</p>
+            <input type="radio" name="yesno" value="Yes">
+                <label for="Yes">Yes</label>
+            <input type="radio" name="yesno" value="No">
+                <label for="No">No</label>
+        </div>
+
+        <div class="emailContainer">
+            <p>Email:</p>
+            <input type="email" id="emailInput" required placeholder="Enter E-mail here">
+        </div>
+
+        <div class="refContainer">
+            <p>How did you hear about me?</p>
+            <div class="refButtonContainer">
+                <input type="radio" name="ref" value="classmate">
+                    <label for="classmate">Classmate</label>
+                <input type="radio" name="ref" value="resume">
+                    <label for="resume">Resume Submission</label>
+                <input type="radio" name="ref" value="linked">
+                    <label for="linked">LinkedIn</label>
+                <input type="radio" name="ref" value="codeacademy">
+                    <label for="codeacademy">Code Academy Rec</label> 
+            </div>
+
+        </div>
+
+        <div class="birthdayContainer">
+            <p>Birthday? (optional)</p>
+            <input type="date" name="date">
+        </div>
+
+        <div class="commentContainer">
+            <p>Additional Comments:</p>
+            <textarea name="comments" minlength="20" maxlength="500" cols="30" rows="10" placeholder="Comments here"></textarea>
+        </div>
+        <div class="submitContainer">
+            <input type="submit" value="Submit" class="submitButton">
+        </div>
+        
+    </div>
+</body>
+</html>
