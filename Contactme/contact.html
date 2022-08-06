@@ -11,36 +11,59 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form class="contactPageContainer">
+    <form class="contactPageContainer" action="results.html" method="post">
         
         <div class="title">
             <h1>Contact me</h1>
         </div>
         
-        <form id="yesNoContainer">
+        <div class="infoContainer">
+            <p>My information</p>
+            <p>Email:</p>
+            <p>peytonsmith53@gmail.com</p>
+            <p>Phone:</p>
+            <p>(940)-203-1823</p>
+        </div>
+
+        <hr>
+
+        <div id="yesNoContainer">
             <p>Would you like to be contacted?</p>
             <input type="radio" name="yesno" id="yesButton" value="Yes">
                 <label for="Yes">Yes</label>
             <input type="radio" name="yesno" id="noButton" value="No">
                 <label for="No">No</label>
-        </form>
+        </div>
 
         <div class="emailContainer">
             <p>Email:</p>
-            <input type="email" id="emailInput" placeholder="Enter E-mail here">
+            <input type="email" id="emailInput" placeholder="Enter E-mail here" required>
         </div>
 
         <div class="refContainer">
             <p>How did you hear about me?</p>
             <div class="refButtonContainer">
-                <input type="radio" id="classmateButton" name="ref" value="classmate">
+
+                <div id="classmateContainer">
+                    <input type="radio" id="classmateButton" name="ref" value="classmate">
                     <label for="classmate">Classmate</label>
-                <input type="radio" id="resButton" name="ref" value="resume">
+                </div>
+
+                <div id="resButtonContainer">
+                    <input type="radio" id="resButton" name="ref" value="resume">
                     <label for="resume">Resume Submission</label>
-                <input type="radio" id="linkButton" name="ref" value="linked">
+                </div>
+
+                <div id="linkButtonContainer">
+                    <input type="radio" id="linkButton" name="ref" value="linked">
                     <label for="linked">LinkedIn</label>
-                <input type="radio" id="academyButton" name="ref" value="codeacademy">
+                </div>
+
+                <div id="codeButtonContainer">
+                    <input type="radio" id="academyButton" name="ref" value="codeacademy">
                     <label for="codeacademy">Code Academy Rec</label> 
+                </div>
+
             </div>
 
         </div>
