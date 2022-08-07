@@ -290,6 +290,13 @@ hr{
         text-align: center;
     }
 
+    .nameContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     #peyton{
         text-align: center;
         margin: 0;
