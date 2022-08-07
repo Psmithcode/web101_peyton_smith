@@ -284,6 +284,17 @@ hr{
         text-align: center;
     }
 
+    .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #peyton{
+        text-align: center;
+        margin: 0;
+    }
+
     .infoContainer{
         width: 100%;
         text-align: center;
