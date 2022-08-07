@@ -5,10 +5,16 @@ body {
     background-size: cover;
   }
   /* What kind of selector is this? */
-  .logo {
+
+  #logoContainer{
     width: 150px;
     height: 150px;
-    margin: 3% 10%;
+    object-fit:cover;
+  }
+
+  .logo {
+    max-width:100%;
+    max-height:100%;
   }
 
   header {
@@ -23,7 +29,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 30% 40% 30%;
-    background-color: var(--light);
+    background: linear-gradient(0deg, var(--purple), var(--light) 30%)
   }
 
   /* This is an element within and element selector */ 
