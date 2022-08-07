@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form class="contactPageContainer" action="results.html" method="post">
+    <form class="contactPageContainer" enctype="multipart/form-data" action="results.html" method="GET">
         
         <div class="header">
             <div class="title">
@@ -33,9 +33,9 @@
 
         <div id="yesNoContainer">
             <p>Would you like to be contacted?</p>
-            <input type="radio" name="yesno" id="yesButton" value="Yes">
+            <input type="radio" name="Contact" id="yesButton" value="Yes">
                 <label for="Yes">Yes</label>
-            <input type="radio" name="yesno" id="noButton" value="No">
+            <input type="radio" name="Contact" id="noButton" value="No">
                 <label for="No">No</label>
         </div>
 
@@ -86,7 +86,7 @@
 
         <div class="birthdayContainer">
             <p>Birthday? (optional)</p>
-            <input type="date" id="date" name="date">
+            <input type="date" id="date" name="birthday">
         </div>
 
         <div class="commentContainer">
@@ -99,6 +99,5 @@
         
     </form>
 
-    <script src="contact.js"></script>
 </body>
 </html>
