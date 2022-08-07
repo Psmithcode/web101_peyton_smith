@@ -31,20 +31,20 @@ body {
     margin: 2% 1% 3%;
     height: 10%;
     width: 15%;
-    color: white;
+    color: var(--purple);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    border-radius: 25px;
-    background: transparent;
+    /* border-radius: 25px; */
+    background-color: var(--darkpurple);
     padding: 20px;
     text-align: center;
     border: 2px solid white;
+    text-decoration: none;
   }
 
   .has-border {
-    border-radius: 25px;
     border: 2px solid var(--light);
-    background: none;
+    /* background: none; */
     padding: 20px;
     color: var(--light);
   }
@@ -57,7 +57,7 @@ body {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding-right: 2%;
+    /* padding-right: 2%; */
     align-items: center;
   }
   /* This is an ID selector */
@@ -121,5 +121,6 @@ body {
     --pink: #ec4899;
     --red: #EB1D36;
     --purple: #76549A;
+    --darkpurple: #683F77;
 
 }
